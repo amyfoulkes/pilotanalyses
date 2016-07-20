@@ -1,0 +1,7 @@
+"0","counts <- read.csv(""~/Dropbox/Data/RNA/RNA skin analysis May 2016/RNAskin.csv"",header=F,skip=1)"
+"0","factors <- read.csv(""/Users/mdehsaf3/Dropbox/Data/RNA/RNA skin analysis May 2016/Clinical_factors_Pre_PSORT_Amy_v3_8_6_16.csv"")"
+"0","counts <- counts[,c(1:60)]"
+"0","factors <- factors[c(1:59),]"
+"0","names(counts)[1] = ""Gene"""
+"0","factors=as.data.frame(factors[,2:ncol(factors)],row.names=as.character(factors$BX_code))"
+"0","data=data.frame(counts,row.names=1)"
